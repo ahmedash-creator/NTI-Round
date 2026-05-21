@@ -39,10 +39,11 @@ void main() {
     } else if (choice == '2') {
       print("\nTheater Seats:");
       for (int i = 0; i < 5; i++) {
+        String row = '';
         for (int j = 0; j < 5; j++) {
-          print(seats[i][j]);
+          row += seats[i][j] + ' ';
         }
-        print("\n");
+        print(row);
       }
 
     } else if (choice == '3') {
